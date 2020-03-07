@@ -6,16 +6,16 @@
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?> </a>
         </h2>
         <div>
-            <?php firsttheme_post_meta(); ?>
+            <?php _themename_post_meta(); ?>
         </div>
         <div>
             <?php the_excerpt(); ?>
         </div>
-        <?php firsttheme_read_more_link(); ?>
+        <?php _themename_read_more_link(); ?>
     <?php } ?>
     <?php the_posts_pagination(); ?>
 <?php } else { ?>
-    <p><?php esc_html_e('Sorry, no posts found', 'firsttheme'); ?></p>
+    <p><?php esc_html_e('Sorry, no posts found', '_themename'); ?></p>
 <?php } ?>
 
 <?php
@@ -23,7 +23,7 @@
 $city = 'london';
 printf(
     /* translators: %s : cityname */
-    esc_html__('Your city is %s', 'firsttheme'),
+    esc_html__('Your city is %s', '_themename'),
     $city
 );
 
