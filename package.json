@@ -41,5 +41,9 @@
     "webpack-stream": "^5.2.1",
     "yargs": "^15.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "normalize.css": "^8.0.1",
+    "slick-carousel": "^1.8.1"
+  }
 }
